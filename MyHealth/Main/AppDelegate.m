@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "ScrollViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +18,35 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//     Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ScrollViewController *ScrollView = [[ScrollViewController alloc]init];
+    NSString *keyString = (NSString *)kCFBundleVersionKey;
+    //    新版本号
+    NSString *valueString = [NSBundle mainBundle].infoDictionary[keyString];
+    //    获取本地版本号
+    NSString *valueStr = [[NSUserDefaults standardUserDefaults] objectForKey:keyString];
+    
+    if ([valueString isEqualToString:valueStr]) {
+        [self passValue];
+    }else{
+        self.window.rootViewController = ScrollView;
+        [[NSUserDefaults standardUserDefaults] setObject:valueString forKey:keyString];
+    }
+    
+
+    
+    
+    
     return YES;
 }
+- (void)passValue
+{
+    MainViewController *main_vc = [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:nil];
+    self.nav = [[MainNavigatioController alloc]initWithRootViewController:main_vc];
+    self.window.rootViewController = self.nav;
 
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

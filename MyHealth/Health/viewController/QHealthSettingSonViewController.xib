@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QHealthSettingSonViewController">
+            <connections>
+                <outlet property="nameLabel" destination="XSc-gP-jj7" id="IM3-py-kxy"/>
+                <outlet property="vauleLabel" destination="HRF-wR-K9X" id="3bI-Dm-oyf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSc-gP-jj7" userLabel="nameLabel">
+                    <rect key="frame" x="198" y="174" width="204" height="66"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="JOO-r4-65O"/>
+                        <constraint firstAttribute="width" constant="204" id="qbl-H5-u7n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRF-wR-K9X" userLabel="vauleLabel">
+                    <rect key="frame" x="198" y="293" width="204" height="66"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="NZS-nC-vlh"/>
+                        <constraint firstAttribute="height" constant="66" id="koc-My-QMl"/>
+                        <constraint firstAttribute="width" constant="204" id="uwr-gw-zHg"/>
+                        <constraint firstAttribute="width" constant="204" id="vs0-5w-EbV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="koc-My-QMl"/>
+                            <exclude reference="uwr-gw-zHg"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="1" green="0.47317936347080181" blue="0.47787225621503182" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XSc-gP-jj7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="4Wo-99-pSF"/>
+                <constraint firstItem="XSc-gP-jj7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="174" id="6TA-6Y-S0e"/>
+                <constraint firstItem="HRF-wR-K9X" firstAttribute="top" secondItem="XSc-gP-jj7" secondAttribute="bottom" constant="53" id="fF7-IM-e2x"/>
+                <constraint firstItem="HRF-wR-K9X" firstAttribute="leading" secondItem="XSc-gP-jj7" secondAttribute="leading" id="uJ4-As-V0x"/>
+                <constraint firstItem="XSc-gP-jj7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vMq-lh-TL9"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4Wo-99-pSF"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

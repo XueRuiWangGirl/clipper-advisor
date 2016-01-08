@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QDataView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="data_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="MTx-xp-83F">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWT-z4-86r">
+                    <rect key="frame" x="260" y="5" width="80" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="586-7E-YHt"/>
+                        <constraint firstAttribute="width" constant="80" id="cuf-Ng-Olc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9u4-rx-KQs" userLabel="eatLabel">
+                    <rect key="frame" x="30" y="80" width="140" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="OIm-DS-rE3"/>
+                        <constraint firstAttribute="height" constant="50" id="ZJQ-lU-klD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.14509803921568629" green="0.74901960784313726" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj3-se-zb0" userLabel="runLabel">
+                    <rect key="frame" x="430" y="80" width="140" height="50"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="L6r-2W-aDG"/>
+                        <constraint firstAttribute="width" constant="140" id="m79-MN-Cwl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.31372549019607843" green="0.77254901960784317" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zWT-z4-86r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="1JT-Jq-3PD"/>
+                <constraint firstItem="9u4-rx-KQs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="5GY-su-hhK"/>
+                <constraint firstItem="MTx-xp-83F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8ml-OL-p51"/>
+                <constraint firstItem="9u4-rx-KQs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="CK4-Ng-6fT"/>
+                <constraint firstItem="zWT-z4-86r" firstAttribute="centerX" secondItem="MTx-xp-83F" secondAttribute="centerX" id="agX-GX-3HA"/>
+                <constraint firstItem="MTx-xp-83F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="axe-AO-gaK"/>
+                <constraint firstAttribute="bottom" secondItem="MTx-xp-83F" secondAttribute="bottom" id="rNu-dG-J0M"/>
+                <constraint firstItem="Xj3-se-zb0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="tTR-J9-SLo"/>
+                <constraint firstAttribute="trailing" secondItem="MTx-xp-83F" secondAttribute="trailing" id="tqZ-1K-Y6J"/>
+                <constraint firstAttribute="trailing" secondItem="Xj3-se-zb0" secondAttribute="trailing" constant="30" id="vN1-VH-oZv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="dataTitleLabel" destination="zWT-z4-86r" id="1Hv-wG-UuY"/>
+                <outlet property="eatLabel" destination="9u4-rx-KQs" id="Gd9-b1-yTv"/>
+                <outlet property="runLabel" destination="Xj3-se-zb0" id="Csc-Qc-MAK"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="252"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="data_background.png" width="860" height="457"/>
+    </resources>
+</document>

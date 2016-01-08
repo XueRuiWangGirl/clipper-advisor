@@ -1,0 +1,18 @@
+//
+//  Global.pch
+//  MyHealth
+//
+//  Created by imac on 15/11/9.
+//  Copyright (c) 2015年 imac. All rights reserved.
+//
+
+#ifndef MyHealth_Global_pch
+#define MyHealth_Global_pch
+//category
+#import "UIView+AutoLayout.h"
+//第三方
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD+MJ.h"
+#import "MJRefresh.h"
+#endif
